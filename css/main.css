@@ -167,7 +167,7 @@ These are css styles, others're attached
 .page {
   -webkit-transition: opacity 0.8s ease-in 0.2s;
   transition: opacity 0.8s ease-in 0.2s;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 body,
