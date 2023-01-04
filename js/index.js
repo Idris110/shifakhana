@@ -135,30 +135,30 @@ $("document").ready(function ($) {
     });
 
     /* --------------------------------------------------------------------------- */
-
-    if ($(".navbar__menu-link").length) {
-        mobileAccardionMenu();
-    }
     // accardion - navbar submenu for mobile 
-    function mobileAccardionMenu() {
-        if ($(window).innerWidth() < 1200) {
-            $(".navbar__menu-link").on("click", function (event) {
-                if ($(this).siblings(".navbar__submenu").length) {
-                    $(this).siblings(".navbar__submenu").slideToggle();
-                    $(this).parent(".navbar__menu-item").siblings(".navbar__menu-item").find(".navbar__submenu").slideUp();
-                }
-                return false;
-            });
-        }
-        else {
-            fixedMenu();
-            $(".navbar__menu-link").click(function () {
-                $(this).siblings(".navbar__submenu").slideToggle();
-                $(this).parent(".navbar__menu-item").siblings(".navbar__menu-item").find(".navbar__submenu").slideUp();
-                return true;
-            });
-        }
-    }
+
+    // if ($(".navbar__menu-link").length) {
+    //     mobileAccardionMenu();
+    // }
+    // function mobileAccardionMenu() {
+    //     if ($(window).innerWidth() < 1200) {
+    //         $(".navbar__menu-link").on("click", function (event) {
+    //             if ($(this).siblings(".navbar__submenu").length) {
+    //                 $(this).siblings(".navbar__submenu").slideToggle();
+    //                 $(this).parent(".navbar__menu-item").siblings(".navbar__menu-item").find(".navbar__submenu").slideUp();
+    //             }
+    //             return false;
+    //         });
+    //     }
+    //     else {
+    //         fixedMenu();
+    //         $(".navbar__menu-link").click(function () {
+    //             $(this).siblings(".navbar__submenu").slideToggle();
+    //             $(this).parent(".navbar__menu-item").siblings(".navbar__menu-item").find(".navbar__submenu").slideUp();
+    //             return true;
+    //         });
+    //     }
+    // }
 
     /* --------------------------------------------------------------------------- */
 
@@ -632,11 +632,20 @@ $("document").ready(function ($) {
                     .addClass("fa-angle-up");
 
                 // accardion - item
+                console.log(this);
                 $(".faqs__cards").find(".faqs__cards-item").css("border-color", "#f0f0f0");
                 $(this).siblings(".faqs__cards-item").find(".faqs__cards-item-text").slideUp();
                 $(this).css("border-color", "#f22283").find(".faqs__cards-item-text").slideDown();
             });
     }
+
+    const sld6 = document.getElementById("slidedown6");
+    $(sld6).css("border-color", "#f22283").find(".faqs__cards-item-text").slideUp();
+    $(".faqs__cards").find(".faqs__cards-item").css("border-color", "#f0f0f0");
+    $(sld6)
+    .find(".fa")
+    .removeClass("fa-angle-up")
+    .addClass("fa-angle-down");
 
     /* --------------------------------------------------------------------------- */
 

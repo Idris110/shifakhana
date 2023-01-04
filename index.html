@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="css/my.css">
-
+    
     <!-- Font awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
@@ -173,36 +173,9 @@
                             <a class="navbar__menu-link active" style="font-size: 19px;" href="/">Home</a>
                         </li>
 
-                        <li class="navbar__menu-item">
+                        <!-- <li class="navbar__menu-item">
                             <a class="navbar__menu-link" style="font-size: 19px;" href="#">Pages</a>
-                            <ul class="navbar__submenu">
-                                <li class="navbar__submenu-item">
-                                    <a href="cases-3_columns.html" class="navbar__submenu-link">Cases 3 columns</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="cases-3_columns-2.html" class="navbar__submenu-link">Cases 3 columns 2</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="cases-3_detail.html" class="navbar__submenu-link">Case details</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="doctors-3_columns.html" class="navbar__submenu-link">Doctors 3 columns</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="doctors-single_right.html" class="navbar__submenu-link">Doctor Single page
-                                        right</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="doctors-single_left.html" class="navbar__submenu-link">Doctor Single page
-                                        left</a>
-                                </li>
-                            </ul>
-                        </li>
+                        </li> -->
 
                         <li class="navbar__menu-item">
                             <a class="navbar__menu-link" style="font-size: 19px;" href="about.html">About Us</a>
@@ -218,12 +191,10 @@
                         </li>
                     </ul>
 
-                    <div class="navbar__right">
-
-                        
+                    <!-- Appointment -->
+                    <!-- <div class="navbar__right">
                         <a href="#" class="btn btn_pink p-3" id="popup-form-open">MAKE AN APPOINTMENT</a>
-
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -244,10 +215,17 @@
                     </div>
                     <div class="container">
                         <div class="slide-item__block">
-                            <h1 class="slide-item__title">Alternative <span>Medicinal<br>Center</span> in Mumbai
+                            <h1 class="slide-item__title" style="
+                                @media screen and (max-width: 480px) {
+                                    text-transform: none; font-family: inherit; letter-spacing: -2px; font-size: 70px;
+                                }">Freedom from <span style="
+                                @media screen and (max-width: 480px) {
+                                   font-family: inherit;
+                                }">PAIN</span><br>Bring back your Smile
                             </h1>
-                            <h4 class="slide-item__subtitle">30% discount on first consultation</h4>
-                            <a href="departments-details_right.html" class="btn btn_blue">BOOK A CONSULTATION</a>
+                            <h4 class="slide-item__subtitle">We treat all types of pain, be it Acute or Chronic, Sudden Sprain, Strain or Spasm.
+                            <br>All Muskuloskeletal pains like Cervical/ Neck, Shoulder, Upper and Lower back, Hip, Sciatica, Upper and Lower Arms, Menstrual Pain and many more.</h4>
+                            <!-- <a href="departments-details_right.html" class="btn btn_blue">BOOK A CONSULTATION</a> -->
                         </div>
                     </div>
                 </div>
@@ -308,7 +286,7 @@
 
             <!-- Start of .header-bottom .services -->
             <!-- 1 -->
-            <div class="services">
+            <div class="services" id="conditions">
                 <div class="container">
                     <div class="services__items owl-carousel owl-theme">
 
@@ -521,8 +499,8 @@
                     <p>We deeply feels that, no individual should suffer from Pain and diseases, when Holistic Health care solutions are available for most of the modern day diseases, which are generally result of Stress, improper Lifestyle and incorrect Diet.</p>
                     <a href="about.html" class="read-more">read more</a>
                     <div class="about__text-signature">
-                        <img src="images/png/signature.png" alt="signature">
-                        <h4>Ismail Ratlamwala<br><span>Cheif Acupuncturist</span></h4>
+                        <!-- <img src="images/png/signature.png" alt="signature"> -->
+                        <!-- <h4>Ismail Ratlamwala<br><span>Cheif Acupuncturist</span></h4> -->
                     </div>
                 </div>
             </div>
@@ -830,7 +808,7 @@
                                         <a href="#about"><i class="fa fa-angle-right mb-3"></i> About Us</a>
                                     </li>
                                     <li>
-                                        <a href="#departments"><i class="fa fa-angle-right mb-3"></i> Our Departments</a>
+                                        <a href="#conditions"><i class="fa fa-angle-right mb-3"></i> Conditions Treated</a>
                                     </li>
                                     <li>
                                         <a href="#services"><i class="fa fa-angle-right mb-3"></i> Services</a>

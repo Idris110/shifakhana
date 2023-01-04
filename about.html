@@ -22,10 +22,34 @@
     <!-- template style -->
     <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/my.css">
+    
+    <!-- Font awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
+
+<style>
+    .popPara{
+        font-family: "Roboto Light";
+        font-size: 17px;
+        line-height: 1.5;
+        color: #333333;
+    }
+    .popHead{
+        font-size: 35px; 
+        color: #1f3d9d; 
+        line-height: 1; 
+        text-transform: none;
+        font-family: -webkit-body;    
+    }
+    /* .work-date li{
+        margin-bottom: 17px ;
+    } */
+</style>
 
 <body>
 
@@ -41,19 +65,28 @@
     <div class="page">
 
         <!-- Start of .header-top -->
-        <header class="header-top">
+        <header class="header-top" style="
+        padding-top: 0px !important;">
             <div class="container">
 
                 <!-- header-top__logo -->
                 <div class="header-top__logo">
-                    <a href="index.html">
-                        <img id="" src="images/icon.png" alt="logo" height="39px">
-                        <span class="ml-1" style='
+                    <a href="index.html" style="display: flex; align-items: center; justify-content: center;">
+                        <img id="" src="images/icon.png" alt="logo" height="40px">
+                        <span class="ml-2 mt-2" style='
                         font-family: "BebasNeueBold"; 
-                        font-size: 30px; 
+                        font-size: 48px; 
                         color: #ffffff;' >Shifakhana</span>
                     </a>
                 </div>
+
+                <!-- <div class="" style="">
+                    <img id="" src="images/icon.png" alt="logo" height="50px">
+                    <span class="ml-1" style='
+                        font-family: "BebasNeueBold"; 
+                        font-size: 45px; 
+                        color: #ffffff;' >Shifakhana</span>
+                </div> -->
                 <!-- End of .header-top__logo -->
 
                 <!-- .header-top__call -->
@@ -111,12 +144,19 @@
 
                 <!-- hidden navbar for mobiles -->
                 <div class="navbar-logo">
-                    <a href="index.html">
-                        <img id="" src="images/icon.png" alt="logo" height="39px">
+                    <!-- <a href="index.html">
+                        <img id="" src="images/icon.png" alt="logo" height="32px">
                         <span class="ml-1" style='
                         font-family: "BebasNeueBold"; 
                         font-size: 30px; 
-                        color: #f22283;' >Shifakana</span>
+                        color: #f22283;' >Shifakhana</span>
+                    </a> -->
+                    <a href="index.html" style="display: flex; align-items: center; justify-content: center;">
+                        <img id="" src="images/icon.png" alt="logo" height="32px">
+                        <span class="ml-1" style='
+                        font-family: "BebasNeueBold"; 
+                        font-size: 30px; 
+                        color: #f22283;' >Shifakhana</span>
                     </a>
                 </div>
 
@@ -130,130 +170,33 @@
 
                     <ul class="navbar__menu">
                         <li class="navbar__menu-item">
-                            <a class="navbar__menu-link active" href="/">Home</a>
+                            <a class="navbar__menu-link active" style="font-size: 19px;" href="/">Home</a>
+                        </li>
+
+                        <!-- <li class="navbar__menu-item">
+                            <a class="navbar__menu-link" style="font-size: 19px;" href="#">Pages</a>
+                        </li> -->
+
+                        <li class="navbar__menu-item">
+                            <a class="navbar__menu-link" style="font-size: 19px;" href="about.html">About Us</a>
                         </li>
 
                         <li class="navbar__menu-item">
-                            <a class="navbar__menu-link" href="#">Pages</a>
-                            <ul class="navbar__submenu">
-                                <li class="navbar__submenu-item">
-                                    <a href="cases-3_columns.html" class="navbar__submenu-link">Cases 3 columns</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="cases-3_columns-2.html" class="navbar__submenu-link">Cases 3 columns 2</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="cases-3_detail.html" class="navbar__submenu-link">Case details</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="doctors-3_columns.html" class="navbar__submenu-link">Doctors 3 columns</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="doctors-single_right.html" class="navbar__submenu-link">Doctor Single page
-                                        right</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="doctors-single_left.html" class="navbar__submenu-link">Doctor Single page
-                                        left</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="navbar__menu-item">
-                            <a class="navbar__menu-link" href="#">Services</a>
-                            <ul class="navbar__submenu">
-                                <li class="navbar__submenu-item">
-                                    <a href="departments-3_column.html" class="navbar__submenu-link">Departments 3
-                                        columns</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="departments-3_column_icon.html" class="navbar__submenu-link">Departments 3
-                                        columns icon</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="departments-1_column.html" class="navbar__submenu-link">Departments 1
-                                        column</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="departments-details_right.html" class="navbar__submenu-link">Department
-                                        Details right</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="departments-details_left.html" class="navbar__submenu-link">Department
-                                        Details left</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="departments-details.html" class="navbar__submenu-link">Department
-                                        Details</a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="navbar__menu-item">
-                            <a class="navbar__menu-link" href="#">About Us</a>
-                            <ul class="navbar__submenu">
-                                <li class="navbar__submenu-item">
-                                    <a href="about.html" class="navbar__submenu-link">About Us</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="faqs.html" class="navbar__submenu-link">FAQs</a>
-                                </li>
-                            </ul>
+                            <a class="navbar__menu-link" style="font-size: 19px;" href="faqs.html">FAQs</a>
                         </li>
 
                         
                         <li class="navbar__menu-item">
-                            <a class="navbar__menu-link" href="#">Contacts</a>
-                            <ul class="navbar__submenu">
-                                <li class="navbar__submenu-item">
-                                    <a href="contact.html" class="navbar__submenu-link">Contact</a>
-                                </li>
-
-                                <li class="navbar__submenu-item">
-                                    <a href="contact-2.html" class="navbar__submenu-link">Contact-2</a>
-                                </li>
-                            </ul>
+                            <a class="navbar__menu-link" style="font-size: 19px;" href="contact.html">Contact</a>
                         </li>
                     </ul>
 
-                    <div class="navbar__right">
-
-                        
+                    <!-- Appointment -->
+                    <!-- <div class="navbar__right">
                         <a href="#" class="btn btn_pink p-3" id="popup-form-open">MAKE AN APPOINTMENT</a>
-
-                    </div>
+                    </div> -->
                 </div>
 
-            </div>
-        </header>
-        <!-- End of .header-middle -->
-
-        <!-- Start of .header-bottom-4 -->
-        <header class="header-bottom-4">
-            <!-- <img src="images/banner/banner4.jpg"> -->
-            <div class="header-bottom-4__bg">
-                <div class="icon">
-                    <img src="images/banner/banner-shape.png">
-                </div>
-            </div>
-            <div class="container">
-                <h1 class="section-title">About <span>us</span></h1>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">About Us</li>
-                </ol>
             </div>
         </header>
         <!-- End of .header-bottom-4 -->
@@ -336,14 +279,20 @@
                 </div>
             </div>
             <!-- Start of .footer__top -->
-            <div class="footer__top">
-                <div class="footer__logo">
-                    <img src="images/footer-logo.png" alt="footer-logo">
+            <div class="footer__top pt-4">
+                <div class="footer__logo mb-0">
+                        <a href="index.html" style="display: flex; align-items: center; justify-content: center;">
+                            <img id="" src="images/icon.png" alt="logo" height="40px">
+                            <span class="ml-1 mt-2" style='
+                            font-family: "BebasNeueBold"; 
+                            font-size: 48px; 
+                            color: #ffffff;' >Shifakhana</span>
+                        </a>
                 </div>
                 <div class="container">
-                    <div>
-                        <div class="footer__top-blocks">
-                            <h1 class="title">Contacts</h1>
+                    <div style="width: 100%;">
+                        <div class="footer__top-blocks mb-1 mt-5">
+                            <h1 class="title mb-4">Contacts</h1>
                             <div class="content">
                                 <div class="content-item">
                                     <div class="icon">
@@ -353,11 +302,10 @@
                                                 transform="translate(-809 -353.063)" /></svg>
                                     </div>
                                     <div class="text">
-                                        <a href="tel:+18004567890">+1 800 456 7890</a>
-                                        <a href="tel:+18004567890">+1 800 456 7890</a>
+                                        <a href="tel:9029002352">+91 9029002352</a>
                                     </div>
                                 </div>
-                                <div class="content-item">
+                                <div class="content-item mb-3">
                                     <div class="icon">
                                         <svg width="18.88" height="25.719" viewBox="0 0 18.88 25.719">
                                             <path id="address.svg" class="header-top__call-icon cls-1"
@@ -365,8 +313,8 @@
                                                 transform="translate(-1024.31 -352)" /></svg>
                                     </div>
                                     <div class="text">
-                                        <p>1560 Holden Street San Diego, CA 92139</p>
-                                        <a href="#" class="location">Get directions on the map <i
+                                        <p>604, Sahyadri Apartment, Malkani Estate, Dutta Mandir Road, Malad East, Mumbai-400097 </p>
+                                        <a href="https://goo.gl/maps/3FqhCT4G3oFLhXfh7" class="location mb-0">Get directions on the map <i
                                                 class="fa fa-map-marker"></i></a>
                                     </div>
                                 </div>
@@ -378,77 +326,79 @@
                                                 transform="translate(-1239.84 -352.281)" /> </svg>
                                     </div>
                                     <div class="text">
-                                        <a href="mailto:inbox@medihelp.com">inbox@medihelp.com</a>
+                                        <a href="mailto:inbox@medihelp.com">ratlamwalaismail@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
     
-                        <div class="footer__top-blocks">
-                            <h1 class="title">Opening hours</h1>
+                        <div class="footer__top-blocks mb-1 mt-5">
+                            <h1 class="title mb-4">Working hours</h1>
                             <div class="content">
                                 <ul class="work-date">
-                                    <li><span>Mon - Thu</span><b>08:00 - 18:00</b></li>
-                                    <li><span>Wed - Thur</span><b>09:00 - 19:00</b></li>
-                                    <li><span>Friday</span><b>10:00 - 22:00</b></li>
-                                    <li><span>Saturday</span><b>09:00 - 14:00</b></li>
-                                    <li><span>Sunday</span><b>Closed</b></li>
+                                    <li class="mb-3"><span>Mon</span><b>08:00 PM - 10:00 PM</b></li>
+                                    <li class="mb-3"><span>Tues</span><b>08:00 PM - 10:00 PM</b></li>
+                                    <li class="mb-3"><span>Wed</span><b>08:00 PM - 10:00 PM</b></li>
+                                    <li class="mb-3"><span>Thur</span><b>08:00 PM - 10:00 PM</b></li>
+                                    <li class="mb-3"><span>Fri</span><b>08:00 PM - 10:00 PM</b></li>
+                                    <li class="mb-3"><span>Sat</span><b>08:00 PM - 10:00 PM</b></li>
+                                    <li class="mb-3"><span>Sunday</span><b>Closed</b></li>
                                 </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer__top-blocks mb-1 mt-5">
+                            <h1 class="title mb-4">About</h1>
+                            <div class="content">
+                                <ul class="">
+                                    <li>
+                                        <a href="/#about"><i class="fa fa-angle-right mb-3"></i> About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#conditions"><i class="fa fa-angle-right mb-3"></i> Conditions Treated</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#services"><i class="fa fa-angle-right mb-3"></i> Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#why-us"><i class="fa fa-angle-right mb-3"></i> Why Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#faq"><i class="fa fa-angle-right mb-3"></i> FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h1 class="title pb-1 mb-3" style="font-size: 18px; font-family:Roboto Light; font-weight: bold;" >Follow us on</h1>
+                            <div class="socials">
+                                <a href="https://www.facebook.com/" title="facebook"><i class="fa fa-facebook "></i></a>
+                                <a href="https://twitter.com/" title="twitter"><i class="fa fa-twitter ml-3"></i></a>
+                                <a href="https://www.instagram.com/" title="instagram"><i class="fa fa-instagram ml-3"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <div class="footer__top-blocks">
-                            <h1 class="title">Subscribe</h1>
+                    <!-- <div> -->
+
+
+                        <!-- <div class="footer__top-blocks">
+                            <h1 class="title">Follow us on</h1>
                             <div class="content">
-                                <p class="text">To receive email releases, simply provide us with your email address below.
-                                </p>
-                                <form>
-                                    <div class="email">
-                                        <input type="email" placeholder="Email Addres">
-                                        <button type="submit"><i class="fa fa-send"></i></button>
-                                    </div>
-                                    <label>* Personal data will be encrypted</label>
-                                </form>
+                                
                                 <div class="socials">
                                     <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
                                     <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" title="instagram"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
-                        </div>
-    
-                        <div class="footer__top-blocks">
-                            <h1 class="title">Company</h1>
-                            <div class="content">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="#about"><i class="fa fa-angle-right"></i>About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#departments"><i class="fa fa-angle-right"></i>Our Departments</a>
-                                    </li>
-                                    <li>
-                                        <a href="#services"><i class="fa fa-angle-right"></i>Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="#why-us"><i class="fa fa-angle-right"></i>Why Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#faq"><i class="fa fa-angle-right"></i>FAQ</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
             </div>
             <!-- End of .footer__top -->
 
             <!-- Start of .footer__bottom -->
             <div class="footer__bottom">
-                <p>Copyright &copy; 2019 MediHelp Medical Center | Privacy Policy</p>
+                <p>Copyright &copy; 2023 Shifakhana </p>
             </div>
             <!-- End of .footer__bottom -->
 
