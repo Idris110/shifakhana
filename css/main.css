@@ -5166,7 +5166,7 @@ a:hover {
 
 .header-bottom__banner .slide-item {
   width: 100%;
-  height: 1000px;
+  height: 800px;
   padding-top: 310px;
   overflow: hidden;
   position: relative;
@@ -5261,7 +5261,7 @@ a:hover {
 
 .header-bottom__banner .owl-dots {
   position: relative;
-  top: -332px;
+  top: -232px;
   margin: 0 auto;
   max-width: 1120px;
   text-align: left;
@@ -5453,7 +5453,7 @@ a:hover {
 /**************************************************/
 .services {
   position: absolute;
-  bottom: -218px;
+  bottom: -320px;
   left: 50%;
   width: 100%;
   -webkit-transform: translateX(-50%);
@@ -20450,7 +20450,7 @@ body {
     padding-top: 150px;
   }
   .header-bottom .services {
-    bottom: -340px;
+    bottom: -375px;
   }
   .header-bottom .services__item {
     height: 180px;
