@@ -17037,9 +17037,9 @@ body {
     left: 0;
     z-index: 99;
     width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    padding-bottom: 70px;
+    min-height: 26vh;
+    height: auto;
+    padding-bottom: 0px;
     background-color: rgba(255, 255, 255, 0.95);
     text-align: center;
     -webkit-transition: top 0.3s linear;
@@ -17097,7 +17097,7 @@ body {
             justify-content: center;
   }
   .header-middle .navbar__menu {
-    margin-top: 50px;
+    margin-top: 18px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
