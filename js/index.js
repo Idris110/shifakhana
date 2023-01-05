@@ -193,6 +193,13 @@ $("document").ready(function ($) {
                 .slideDown();
         });
     }
+    const sld2 = document.getElementById("slidedown2");
+    $(sld2).css("border-color", "#f22283").find(".accardion__item-text").slideUp();
+    $(".accardion__item").css("border-color", "#f0f0f0");
+    $(sld2)
+    .find(".fa")
+    .removeClass("fa-angle-up")
+    .addClass("fa-angle-down");
 
     /* --------------------------------------------------------------------------- */
 
