@@ -17037,7 +17037,7 @@ body {
     left: 0;
     z-index: 99;
     width: 100%;
-    min-height: 26vh;
+    min-height: 29vh;
     height: auto;
     padding-bottom: 0px;
     background-color: rgba(255, 255, 255, 0.95);
@@ -19884,7 +19884,7 @@ body {
   /*****************************************************/
   /*---------- Start .about-4 section responsive ----------*/
   .about-4 {
-    padding-top: 70px;
+    padding-top: 100px;
     padding-bottom: 45px;
   }
   .about-4 > .container > .content > .video {
